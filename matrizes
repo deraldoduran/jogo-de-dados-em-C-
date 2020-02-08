@@ -1,0 +1,12 @@
+tring[] ordemFraudulentaIDs = new string[3];
+ordemFraudulentaIDs[0] = "A123";
+ordemFraudulentaIDs[1] = "B456";
+ordemFraudulentaIDs[2] = "C789";
+Console.WriteLine($"{ordemFraudulentaIDs[0]} é a ordem n.1, {ordemFraudulentaIDs[1]} é a ordem n.2, {ordemFraudulentaIDs[2]} é a ordem n.3");
+string[] ordemFraudulentaIDs1 = {"novo","novissimo", "ficou velho"};
+Console.WriteLine($"{ordemFraudulentaIDs1[0]} é a ordem n.1, {ordemFraudulentaIDs1[1]} é a ordem n.2, {ordemFraudulentaIDs1[2]} é a ordem n.3");
+Console.WriteLine($"{ordemFraudulentaIDs1.Length} é a ordem n.1, {ordemFraudulentaIDs.Length}");
+foreach(string i in ordemFraudulentaIDs){
+
+    Console.WriteLine($"{i+"novo"}");
+}
