@@ -1,0 +1,18 @@
+Random dado = new Random();
+int dado1 = dado.Next(1,7);
+int dado2 = dado.Next(1,7);
+int dado3 = dado.Next(1,7);
+int bonus=0;
+int total=dado1+dado2+dado3;
+if((dado1 == dado2) || (dado1==dado3) ||(dado2==dado3)){
+        bonus+=2;
+}
+if(dado1 == dado2 && dado2 == dado3){
+    bonus+=6;
+}
+total=total+bonus;
+if(total>=15){
+    Console.WriteLine($"ganhou o jogo com {total} pontos {dado1} , {dado2} , {dado3} , foram {bonus} pontos de bonus");
+}else{
+    Console.WriteLine($"perdeu o jogo com {total} pontos, dado (1) {dado1} , dado (2) {dado2}, dado (3) {dado3}");
+}
