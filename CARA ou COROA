@@ -1,2 +1,2 @@
 Random coin= new Random();
-Console.WriteLine($"é cara {coin.Next(0,10)>4:*}");
+Console.WriteLine($"é cara {coin.Next(0,2)==1 }");
