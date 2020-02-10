@@ -1,0 +1,23 @@
+Random random = new Random();
+int current = 0;
+int monster = 100;
+int hero = 100;
+current=random.Next(1,101);
+do{
+    
+     Console.WriteLine($"stroke = {current}");
+    monster-=current;
+     Console.WriteLine($"monster = {monster} , hero = {hero}");
+     if(monster<=0){ Console.WriteLine($"monster = {monster} loose!");
+      break;
+     }
+    current = random.Next(1,101);
+     Console.WriteLine($"stoke = {current}");
+    hero-=current;
+     Console.WriteLine($"monster = {monster} , hero = {hero}");
+     if(hero<=0){ Console.WriteLine($"hero = {hero} loose!");
+      break;
+     }
+     current=random.Next(1,101);
+
+}while(hero>1 && monster>1); 
