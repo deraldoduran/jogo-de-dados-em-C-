@@ -1,0 +1,14 @@
+string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+string[] items = orderStream.Split(',');
+foreach (string item in items)
+{
+   // Console.WriteLine(item);
+    if(item.Contains("B")){
+        Console.WriteLine($"pacote suspeito {item}");
+    }
+}
+
+/SAIDA
+//pacote suspeito B123
+//pacote suspeito B177
+//pacote suspeito B179
