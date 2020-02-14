@@ -1,0 +1,8 @@
+string value = "abc123";
+char[] valueArray = value.ToCharArray();
+foreach(var c in valueArray){
+    Console.WriteLine(c);
+}
+Array.Reverse(valueArray);
+string result = new string(valueArray);
+Console.WriteLine(result);
